@@ -44,7 +44,7 @@ const start = () => {
         if (data === '/again') {
             return startGame(chatId);
         }
-        if (data === chats[chatId]) {
+        if (data == chats[chatId]) {
             return bot.sendMessage(chatId, `Congrats! You WON ${chats[chatId]}`, againOptions)
         } else {
             return bot.sendMessage(chatId, `Bot choose number! ${chats[chatId]}`, againOptions)
